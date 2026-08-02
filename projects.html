@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<nav class="project-nav">
+
+    <h3>Project navigator</h3>
+    <hr>
+    <div class="nav-category">Software Development</div>
+    <a href="#akku">Akku</a>
+    <a href="#soundeffect">SoundEffect</a>
+    <hr>
+    <div class="nav-category">DIY Projects</div>
+    <a href="#bluetooth">Bluetooth Speaker Rehousing</a>
+    <a href="#speakerpocket">Bluetooth Speaker Backpack Mount</a>
+    <a href="#mainpc1">MainPC Case Modernization 1</a>
+    <a href="#mainpc2">MainPC Case Modernization 2</a>
+    <a href="#mediapc">MediaPC Case Customization</a>
+    <a href="#workstation">DIY Tool Organizer</a>
+    <a href="#fanstand">DIY Fan Stand For Airflow</a>
+    <a href="#dogbed">DIY Dog Bed</a>
+    <hr>
+    <div class="nav-category">Repairs & Restorations</div>
+    <a href="#television">LG Television Repair</a>
+    <a href="#martela-table">Martela Table Restoration</a>
+    <a href="#martela-chair">Martela Chair Restoration</a>
+    <a href="#bike">Vintage Bicycle Maintenance</a>
+    <a href="#livingroom">Vintage Living Room Table</a>
+    <a href="#tablefan">Vintage MD Tablefan</a>
+    <a href="#washingmachine">Washing Machine Repair</a>
+    <hr>
+</nav>
+
+<body>
+
+    <header id="navbar"></header>
+
+    <div class="container">
+
+        <h2>My Projects</h2>
+        <p>
+        I enjoy repairing and improving well-designed products that deserve a longer life than they sometimes get due to design flaws, worn components, or age. Over the years, I have repaired, restored, and upgraded a wide variety of devices and everyday objects, often extending their usable lifespan far beyond what was originally expected.
+        <br><br>
+        My motivation is not primarily driven by sustainability or ideology. Instead, it comes from genuine curiosity and a passion for understanding how things work. I enjoy taking broken devices apart, exploring their internal design, identifying the root cause of a problem, and finding a practical solution. Every repair is an opportunity to learn something new, improve an existing design, and bring a well-built product back into everyday use.
+        <br><br>
+        As the saying goes, "One person's trash is another person's treasure." I have found that many items people consider beyond saving simply need the right diagnosis, a bit of patience, and someone willing to give them a second chance.
+        </p>
+
+        <!-- Akku -->
+        <div class="project-card" id="akku">
+
+            <h2>My own child: Akku</h2>
+
+            <div class="carousel" data-project="akku">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+            <p>
+                Since the official HyperX software only displayed the headset battery status as <strong>Low</strong>, <strong>Medium</strong>, and <strong>High</strong>, Windows was also unable to display the battery status at all. Because I preferred not to rely on additional third-party applications, I decided to reverse engineer the feature and implement it in my own Python application. The same application also allows me to switch Windows audio devices much faster than using the standard Windows sound settings.
+                <br><br>
+
+                To achieve this, I monitored the headset's USB communication and analyzed the exchanged data until I identified which values represented the battery level. After successfully decoding the protocol, I determined the values corresponding to 0% and 100% battery, as well as the intermediate levels by correlating them with the headset's battery warning sounds.
+                <br><br>
+
+                The application now writes the current battery percentage to a <strong>battery.txt</strong> file, which is read by <strong>Rainmeter</strong> and displayed on the desktop in real time.
+                <br><br>
+
+                I also created a custom Rainmeter widget that displays real-time pollen information by retrieving data directly from the University of Turku's Norkko API.
+                <br><br>
+
+                The application remains an active personal project, and I continue to refine and expand its functionality. As it is still evolving, I have chosen not to distribute it publicly at this time.
+            </p>
+
+            </div>
+
+        </div>
+        <!-- SoundEffect -->
+        <div class="project-card" id="soundeffect">
+
+            <h2>SoundEffect Program</h2>
+
+            <div class="carousel" data-project="soundeffect">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+            <p>
+                SoundEffect is another personal project that is still under development, although I have already built a working prototype. The project taught me a great deal about the challenges of capturing and processing audio in real time, especially when aiming for low-latency sound effects.
+                <br><br>
+
+                The application runs a WebSocket server that communicates with an HTML-based user interface. A separate component of the application listens to the audio stream, processes it in real time, and sends the required data through the WebSocket connection, allowing the HTML interface to render the visual effects instantly.
+                <br><br>
+
+                Any application capable of displaying the HTML interface can use these visual effects. In my case, I use them as a Browser Source in OBS Studio, allowing the effects to appear in real time during livestreams and recordings.
+                <br><br>
+
+                Development is currently on hold, but I may continue expanding the project in the future if inspiration strikes again. Since the project is still subject to change, I have chosen not to release the source code publicly at this time.
+            </p>
+
+            </div>
+
+        </div>
+        <!-- Bluetooth Speaker -->
+        <div class="project-card" id="bluetooth">
+
+            <h2>Bluetooth Speaker Rehousing</h2>
+
+            <div class="carousel" data-project="bt">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    The original enclosure had already been damaged during shipping and was no longer airtight, which significantly reduced the speaker's bass performance. To solve this problem, I designed and built a completely new acrylic enclosure while also adding several practical improvements and custom features.
+                    <br><br>
+                    The project involved millimeter-precise planning, fabrication, and continuous refinement to achieve a clean and durable result. The speaker is powered by an integrated power bank, allowing it to recharge itself internally and providing several days of battery life on a single charge.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Workstation -->
+        <div class="project-card" id="workstation">
+
+            <h2>DIY Tool Organizer</h2>
+
+            <div class="carousel" data-project="workstation">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Designed and built a wall-mounted tool organizer that also serves as a decorative feature in the living room. The layout keeps tools neatly organized and easily accessible whenever they are needed. They are used almost every day, so the organizer has definitely earned its place. 😄
+                </p>
+
+            </div>
+
+        </div>
+        <!--- CASE1 -->
+        <div class="project-card" id="mediapc">
+
+            <h2>MediaPC Case Customization</h2>
+
+            <div class="carousel" data-project="case1">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Redesigned and rebuilt the front panel with proper fan mounting positions, improving both airflow and appearance. The computer case was also repainted to give it a clean, modern finish. It now serves as a dedicated Linux-based mediaPC.
+                </p>
+
+            </div>
+
+        </div>
+        <!--- CASE2-->
+        <div class="project-card" id="mainpc1">
+
+            <h2>MainPC Case Modernization 1 (3rd FrontFan)</h2>
+
+            <div class="carousel" data-project="case2">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Removed the optical drive bays to create space for a third front intake fan. Fabricated a custom fan mount and ventilation grilles to improve airflow while maintaining a clean appearance.
+                </p>
+
+            </div>
+
+        </div>
+        <!-- table -->
+        <div class="project-card" id="martela-table">
+
+            <h2>1990s Martela Table Restoration</h2>
+
+            <div class="carousel" data-project="table">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Filled damaged areas with wood filler, sanded the surface, applied a fresh coat of paint, and finished the table with a protective clear lacquer.s
+                </p>
+
+            </div>
+
+        </div>
+        <!--- chair -->
+        <div class="project-card" id="martela-chair">
+
+            <h2>1990s Martela Chair Restoration</h2>
+
+            <div class="carousel" data-project="chair">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Reupholstered the chair by removing the old fabric, sewing and installing new upholstery, and reassembling the finished chair.
+                </p>
+
+            </div>
+
+        </div>
+                <!-- washingmachine-->
+        <div class="project-card" id="washingmachine">
+
+            <h2>Washing Machine Belt Repair</h2>
+
+            <div class="carousel" data-project="washingmachine">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    The washing machine's drive belt had snapped and needed to be replaced. 
+                    Installing the new belt was challenging due to the tight fit, so zip ties were temporarily used to hold it in place during installation and removed once the belt was properly seated.
+                </p>
+
+            </div>
+
+        </div>
+        <!--bike--->
+        <div class="project-card" id="bike">
+
+            <h2>Bicycle Maintenance</h2>
+
+            <div class="carousel" data-project="bike">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Restored a vintage Torpedo coaster brake hub by disassembling the rear hub, thoroughly cleaning the internal components, replacing the damaged bearing, and applying fresh bearing grease. After reassembly, the hub operated like new.
+
+            </div>
+
+        </div>
+        <!--speakerpocket-->
+        <div class="project-card" id="speakerpocket">
+
+            <h2>Bluetooth Speaker Backpack Mount</h2>
+
+            <div class="carousel" data-project="speakerpocket">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Designed and built a custom speaker pouch that attaches securely to a backpack using a quick-release clip. This saves space inside the backpack while providing a convenient way to carry and use the speaker outdoors.
+                </p>
+
+            </div>
+
+        </div>
+        <!--fanstand-->
+        <div class="project-card" id="fanstand">
+
+            <h2>DIY Fan Stand For Airflow</h2>
+
+            <div class="carousel" data-project="fanstand">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Designed and built a custom stand for a tower fan to improve airflow and increase air circulation during hot summer days. The result proved to be highly effective.
+                </p>
+
+            </div>
+
+        </div>
+        <!--fan-->
+        <div class="project-card" id="tablefan">
+
+            <h2>Vintage 1990s MD Fan</h2>
+
+            <div class="carousel" data-project="fan">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Restored a high-quality 1990s MD desk fan, originally manufactured by SMC, after it developed a high-pitched bearing noise. Replacing the aged bearing grease restored smooth, quiet operation and significantly extended its service life. Despite its age, it continues to perform exceptionally well as of 2026.
+                </p>
+
+            </div>
+
+        </div>
+        <!--table2-->
+        <div class="project-card" id="livingroom">
+
+            <h2>Vintage Living room table</h2>
+
+            <div class="carousel" data-project="table2">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    This old living room table had become unstable and showed clear signs of wear. The support structure was reinforced, the legs were reattached using wood glue, and the tabletop was refinished and repainted. The result is a sturdy, refreshed table that has become the perfect spot for a game of Yahtzee.
+                </p>
+
+            </div>
+
+        </div>
+        <!--television-->
+        <div class="project-card" id="television">
+
+            <h2>LG Television</h2>
+
+            <div class="carousel" data-project="television">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Repaired a 2017 LG LED TV suffering from the common blue-tint issue caused by worn LED backlight strips. Replacing the LEDs restored the original picture quality and significantly extended the television's service life at a minimal cost.
+                </p>
+
+            </div>
+
+        </div>
+        <!--usbc-->
+        <div class="project-card" id="mainpc2">
+
+            <h2>MainPC Modernization 2 (USB-C)</h2>
+
+            <div class="carousel" data-project="usbc">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Expanded the previously modernized Antec PC case by integrating a front-panel USB-C port. The upgrade enables easy access to modern USB-C devices while preserving the functionality and appearance of the case.
+                </p>
+
+            </div>
+
+        </div>
+        <!--dogbed-->
+        <div class="project-card" id="dogbed">
+
+            <h2>DIY Dog Bed</h2>
+
+            <div class="carousel" data-project="dogbed">
+
+                <button class="carousel-btn prev">
+                    &#10094;
+                </button>
+
+                <div class="carousel-media"></div>
+
+                <button class="carousel-btn next">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="project-content">
+
+                <p>
+                    Designed and built a custom dog bed for my girlfriend's dog to use when visiting my home. The bed features a removable zippered cover for easy washing and a foam mattress for comfort and durability. It has held up well over time and remains in excellent condition.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
