@@ -16,6 +16,7 @@ body {
             135deg,
             #000000
         );
+    background-repeat: repeat;
 
     color: white;
     font-family: "Inter", sans-serif;
@@ -185,8 +186,9 @@ footer {
     max-width: 1000px;
     margin: 50px auto;
 
+    background-color:#1b222d;
     background: 
-    url("assets/images/textures/diagonales-decalees.png"),
+    url("assets/images/textures/egg-shell.png"),
     #1b222d;
     background-repeat: repeat;
 
