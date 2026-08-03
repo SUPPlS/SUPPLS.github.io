@@ -78,7 +78,6 @@ const projects = {
         "assets/images/projects/speakerpocket/pocket2.jpeg",
         "assets/images/projects/speakerpocket/pocket3.jpeg",
         "assets/images/projects/speakerpocket/pocket4.jpeg",
-        "assets/images/projects/speakerpocket/pocket5.jpeg",
         "assets/images/projects/speakerpocket/pocket6.jpeg",
         "assets/images/projects/speakerpocket/pocket7.jpeg",
         "assets/images/projects/speakerpocket/pocket8.jpeg",
@@ -163,7 +162,7 @@ const projects = {
         "assets/images/projects/akku/akku7.jpg",
         "assets/images/projects/akku/akku8.jpg",
         "assets/images/projects/akku/akku9.jpg",
-        "assets/images/projects/akku/akku10.jpg"
+        "assets/images/projects/akku/akku10.jpeg"
     ],
     soundeffect: [
         "assets/images/projects/soundeffect/soundeffect1.jpg",
