@@ -1,7 +1,7 @@
 :root {
     --background: #000000;
     --shadows: #0f0f0f3f;
-    --surface: #0f0d0c;
+    --surface: #030100;
     --border: #6E5643;
     --accent: #AA7053;
     --gold: #CCAD5C;
@@ -82,12 +82,36 @@ h3{
          0 0 3px var(--shadows),
          0 0 8px var(--shadows);
 }
+
+h4 {
+    color: var(--accent);
+    font-size: 24px;
+
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+
+         0 0 3px var(--shadows),
+         0 0 8px var(--shadows);
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Open Sans", sans-serif;
+}
+
 nav {
     position: sticky;
     top: 0;
     z-index: 100;
 
-    box-shadow: 0px 1px 4px var(--gold);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0px 0px 3px var(--border);
 
     background:
         url("assets/images/textures/dark-leather.png"),
@@ -108,6 +132,7 @@ nav ul {
 }
 
 nav a {
+    font-family: "Open Sans", sans-serif;
     color:var(--accent);
     text-shadow:
         -1px -1px 0 #000,
@@ -133,28 +158,6 @@ nav a:hover {
     transform: translateY(-2px) scale(1.05);
     text-shadow: 0 0 2px var(--shadows);
 }
-
-/*
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-  
-.grid-item {
-    background: var(--grid-background-color);
-    padding: 30px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-  
-.grid-item h2 {
-    margin-top: 0;
-}
-*/
 
 .hero {
     display: flex;
@@ -223,7 +226,8 @@ nav a:hover {
     padding-bottom: 10px;
     padding-right: 25px;
 
-    box-shadow: 0 0 3px var(--gold);
+    border: 1px solid var(--border);
+    box-shadow: 0 0 4px var(--border);
 
 }
 
@@ -311,10 +315,10 @@ nav a:hover {
 
     position: fixed;
 
-    top: 80px;
-    left: 30px;
+    top: 100px;
+    left: 40px;
 
-    width: 220px;
+    width: 200px;
 
     background: 
     url("assets/images/textures/dark-leather.png"),
@@ -325,7 +329,8 @@ nav a:hover {
 
     padding: 15px;
 
-    box-shadow: 0 0 3px var(--gold);
+    border: 1px solid var(--border);
+    box-shadow: 0 0 4px var(--border);
 
 }
 
