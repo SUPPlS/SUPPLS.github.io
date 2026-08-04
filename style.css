@@ -1,5 +1,5 @@
 :root {
-    --grid-background-color: #1b222d;
+    --grid-background-color: #17191A;
 }
 
 body {
@@ -14,8 +14,7 @@ body {
         url("assets/images/textures/dark-wood.png"),
         linear-gradient(
             135deg,
-            #000000
-        );
+            #17191A);
     background-repeat: repeat;
 
     color: white;
@@ -28,45 +27,49 @@ body {
     text-align: center;
 }
 
+p {
+    color: #EEC5A0;
+}
+
 h1 {
-    color: #ffffff;
+    color: #AD6E54;
     font-size: 26px;
 
     text-align: center;
     text-shadow:
-    0 0 2px rgba(0, 204, 255, 0.247),
-    0 0 10px rgba(0, 225, 255, 0.144);    
+    0 0 2px rgba(0, 0, 0, 0.247),
+    0 0 10px rgba(0, 0, 0, 0.144);    
 }
 
 h2 {
-    color: #ffffff;
+    color: #AD6E54;
     font-size: 20px;
 
     text-align: center;
     text-shadow:
-    0 0 2px rgba(0, 204, 255, 0.247),
-    0 0 10px rgba(0, 225, 255, 0.144);    
+    0 0 2px rgba(0, 0, 0, 0.247),
+    0 0 10px rgba(0, 0, 0, 0.144);    
 }
 
 h3{
-    color: #ffffff;
+    color: #AD6E54;
     font-size: 26px;
 
     
     text-shadow:
-    0 0 2px rgba(0, 204, 255, 0.247),
-    0 0 10px rgba(0, 225, 255, 0.144);   
+    0 0 2px rgba(0, 0, 0, 0.247),
+    0 0 10px rgba(0, 0, 0, 0.144);   
 }
 nav {
     position: sticky;
     top: 0;
     z-index: 100;
 
-    box-shadow: 0px 1px 4px #00aeff;
+    box-shadow: 0px 1px 4px #AD6E54;
 
     background:
         url("assets/images/textures/black-linen.png"),
-        linear-gradient(180deg, #141414, #0f0f0f);
+        linear-gradient(180deg, #17191A);
 
     background-repeat: repeat;
     
@@ -83,7 +86,7 @@ nav ul {
 }
 
 nav a {
-    color: #ffffff;
+    color:#EEC5A0;
     text-shadow: 0 0 8px #000000;
     font-weight: bold;
     text-decoration: none;
@@ -97,7 +100,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #00aeff;
+    color: #AD6E54;
     transform: translateY(-2px) scale(1.05);
     text-shadow: 0 0 2px #000000;
 }
@@ -143,17 +146,15 @@ nav a:hover {
 
     background: linear-gradient(
         135deg,
-        #00e1ff,
-        #32e7ff,
-        #72efff,
-        #a7f5ff,
-        #ffffff
+        #EEC5A0,
+        #AD6E54
+        
     );
 
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 15px rgba(0, 225, 255, 0.25);
+    box-shadow: 0 0 15px rgba(238, 197, 160, 0.25);
     transition: transform .3s ease;
 }
 
@@ -173,23 +174,15 @@ nav a:hover {
     text-align: left;
 }
 
-footer {
-  text-align: center;
-  max-width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 0;
-}
-
 .project-card {
 
     max-width: 1000px;
     margin: 50px auto;
 
-    background-color:#1b222d ;
+    background-color:#273231;
     background: 
-    url("assets/images/textures/45-degree-fabric-dark.png"),
-    #1b222d;
+    url("assets/images/textures/classy-fabric.png"),
+    #17191A;
     background-repeat: repeat;
 
     border-radius: 20px;
@@ -199,7 +192,7 @@ footer {
     padding-bottom: 10px;
     padding-right: 25px;
 
-    box-shadow: 0 8px 25px rgba(0,0,0,.35);
+    box-shadow: 0 0 2px rgba(173, 110, 84, 1);
 
 }
 
@@ -221,7 +214,10 @@ footer {
     overflow: hidden;
     border-radius: 10px;
  
-    background: #00000018;
+    background: 
+    url("assets/images/textures/egg-shell.png"),
+    #17191A;
+    background-repeat: repeat;
 
 }
 
@@ -258,16 +254,16 @@ footer {
     font-size: 28px;
     font-weight: bold;
 
-    color: white;
+    color: #EEC5A0;
 
-    background: rgba(0,0,0,.45);
+    background: rgba(238, 197, 160,.10);
 
     transition: .2s;
 }
 
 .carousel-btn:hover {
 
-    background: rgba(0,225,255,.75);
+    background: rgba(173,110,84,.75);
     transform: translateY(-50%) scale(1.08);
 
 }
@@ -291,20 +287,20 @@ footer {
 
     background: 
     url("assets/images/textures/classy-fabric.png"),
-    #1b222d;
+    #17191A;
     background-repeat: repeat;
 
     border-radius: 15px;
 
     padding: 20px;
 
-    box-shadow: 0 0 20px rgba(0,0,0,.35);
+    box-shadow: 0 0 2px rgba(173, 110, 84, 1);
 
 }
 
 .project-nav h3 {
 
-    color:#00d4ff;
+    color:#AD6E54;
     margin-top: 0;
     margin-bottom: 15px;
 
@@ -314,7 +310,7 @@ footer {
 
     display: block;
 
-    color: white;
+    color: #EEC5A0;
     text-decoration: none;
 
     font-size: 13px;
@@ -322,28 +318,25 @@ footer {
     padding: 8px 0;
 
     transition: .2s;
-
 }
 
 .project-nav a:hover {
 
-    color: #00d4ff;
+    color: #AD6E54;
     transform: translateX(5px);
-
 }
 
 .project-nav hr {
 
     border: none;
-    border-top: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(238, 197, 160);
 
     margin: 12px 0;
-
 }
 
 .nav-category {
 
-    color: #72efff;
+    color: #AD6E54;
     font-size: 13px;
     font-weight: bold;
 
@@ -378,9 +371,17 @@ footer {
     width: 550px;
     height: 2px;
 
-    background: white;
+    background: #AD6E54;
 
     margin: 40px auto;
+}
+
+footer {
+  text-align: center;
+  max-width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
 }
 
 html {
